@@ -1,10 +1,10 @@
 package pricing.factory;
 
-import pricing.PricePolicy;
-import pricing.Region;
-import pricing.policies.BusanPricePolicy;
-import pricing.policies.JejuPricePolicy;
-import pricing.policies.SeoulPricePolicy;
+import domain.Region;
+import pricing.policy.BusanPricePolicy;
+import pricing.policy.JejuPricePolicy;
+import pricing.policy.PricePolicy;
+import pricing.policy.SeoulPricePolicy;
 
 public class RegionPricePolicyFactory extends PricePolicyFactory {
     @Override

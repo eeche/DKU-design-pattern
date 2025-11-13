@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
+import pricing.strategy.PricingStrategy;
+
 public final class PricingEngine {
     private final List<PricingStrategy> pipeline;
 

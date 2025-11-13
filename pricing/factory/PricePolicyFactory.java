@@ -1,7 +1,7 @@
 package pricing.factory;
 
-import pricing.PricePolicy;
-import pricing.Region;
+import domain.Region;
+import pricing.policy.PricePolicy;
 
 public abstract class PricePolicyFactory {
     // Factory Method – 지역별 가격정책 객체 생성
