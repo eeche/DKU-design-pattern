@@ -1,6 +1,5 @@
 package options.decorator;
 
-// 전략 패턴 결합하기!!
 // 구체 데코레이터
 public class LockerAddon extends Addon {
     private enum LockerSize {
