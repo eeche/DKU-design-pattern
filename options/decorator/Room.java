@@ -21,4 +21,16 @@ public class Room implements Bookable {
     public double cost(int slot) {
         return baseRatePerHour * slot;
     }
+
+    public String getRoomID() {
+        return roomID;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public double getBaseRatePerHour() {
+        return baseRatePerHour;
+    }
 }
