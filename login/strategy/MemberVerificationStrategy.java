@@ -9,7 +9,8 @@ import domain.User;
 public class MemberVerificationStrategy implements LoginStrategy {
     private static final Map<String, User> MEMBER_DB = Stream.of(
         new User("user123", "김정수", "010-1234-1234", Tier.PREMIUM),
-        new User("user345", "이수빈", "010-5678-5678", Tier.PRO)
+        new User("user345", "이수빈", "010-5678-5678", Tier.PRO),
+        new User("user567", "박민주", "010-3333-3333", Tier.BASIC)
     ).collect(Collectors.toMap(User::getUserId, u -> u));
 
     @Override

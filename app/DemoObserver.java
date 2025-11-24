@@ -26,10 +26,10 @@ public final class DemoObserver {
         reservation.addRoom(room2);
 
         // 예약/취소 시나리오
-        reservation.reserve("D-101");
-        reservation.reserve("D-102");
+        reservation.reserve("D-101", null, null, null);
+        reservation.reserve("D-102", null, null, null);
         reservation.cancel("D-101");
-        reservation.reserve("D-101");
+        reservation.reserve("D-101", null, null, null);
         reservation.cancel("D-101");
     }
 }
