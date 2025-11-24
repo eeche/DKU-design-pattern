@@ -1,6 +1,7 @@
 package app;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -192,12 +193,16 @@ public class Demo {
         System.out.printf("결제 완료 금액: %, .0f원 → 방 %s 예약 진행%n",
                 paidAmount.doubleValue(), room.getRoomID());
 
+        String userId = "user123";
+        LocalDateTime start = LocalDateTime.now();
+        LocalDateTime end = start.plusHours(1);
+
         // 예약 시 알림 발송
-        reservation.reserve(room.getRoomID(), null, null, null);
+        reservation.reserve(userId, room.getRoomID(), start, end);
 
         // 한 번 더 취소/재예약을 보여주고 싶으면:
         System.out.println("\n[추가 시나리오] 예약 취소 후 재예약");
         reservation.cancel(room.getRoomID());
-        reservation.reserve(room.getRoomID(), null, null, null);
+        reservation.reserve(userId, room.getRoomID(), start, end);
     }
 }
