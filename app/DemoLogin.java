@@ -33,5 +33,14 @@ public class DemoLogin {
             "010-9999-9999" // 전화번호 불일치
         );
         System.out.println("------------------------\n");
+
+        System.out.println("--- 3. 로그인 시도 ---");
+        loginManager.login(
+            verificationStrategy,
+            "user789", // 아이디 불일치
+            "박민주", 
+            "010-3333-3333"
+        );
+        System.out.println("------------------------\n");
     }
 }

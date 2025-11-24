@@ -193,11 +193,11 @@ public class Demo {
                 paidAmount.doubleValue(), room.getRoomID());
 
         // 예약 시 알림 발송
-        reservation.reserve(room.getRoomID());
+        reservation.reserve(room.getRoomID(), null, null, null);
 
         // 한 번 더 취소/재예약을 보여주고 싶으면:
         System.out.println("\n[추가 시나리오] 예약 취소 후 재예약");
         reservation.cancel(room.getRoomID());
-        reservation.reserve(room.getRoomID());
+        reservation.reserve(room.getRoomID(), null, null, null);
     }
 }
