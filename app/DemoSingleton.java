@@ -1,6 +1,9 @@
-package singleton;
+package app;
 
-public class SeatManagerDemo {
+import singleton.Logger;
+import singleton.SeatManager;
+
+public class DemoSingleton {
 
     public static void main(String[] args) {
 
